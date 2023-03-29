@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
-import LoginImage from '../../assets/imgs/LoginImage.png';
-import Logo from '../../assets/imgs/Logo.png';
-import { Context } from '../../context/AuthContext';
-import history from '../../navigation/history';
+import React, { useContext, useState } from "react";
+import LoginImage from "../../assets/imgs/LoginImage.png";
+import Logo from "../../assets/imgs/Logo.png";
+import { Context } from "../../context/AuthContext";
+import history from "../../navigation/history";
 import {
   Acesso,
   BotaoGreen,
@@ -14,32 +14,14 @@ import {
   ImagemLogin,
   Inputs,
   MainText,
-} from '../shared/styles/styles';
+} from "../shared/styles/styles";
 
 const Login = () => {
-  const { handleLogin } = useContext(Context);
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const access = {
-    email,
-    password,
-  };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <Container>
-      <ImagemLogin>
-        <Image src={LoginImage} />
-        <MainText>
-          <h1>Junte-se a vários clientes satisfeitos.</h1>
-          <h3>
-            Cliente HubLocal ganha mais relevância, autoridade e <br></br>
-            visibilidade. Mais de 7.000 marcas confiam na nossa plataforma. Seja
-            uma delas!
-          </h3>
-        </MainText>
-      </ImagemLogin>
       <Acesso>
         <Fields>
           <EmpresaLogo src={Logo} />
@@ -55,10 +37,10 @@ const Login = () => {
             />
           </Inputs>
           <ButtonBlue>
-            <button onClick={() => handleLogin(access)}>Login</button>
+            <button onClick={() => history.push("/home")}>Login</button>
           </ButtonBlue>
           <BotaoGreen>
-            <button onClick={() => history.push('/cadastro')}>
+            <button onClick={() => history.push("/cadastro")}>
               Criar conta
             </button>
           </BotaoGreen>

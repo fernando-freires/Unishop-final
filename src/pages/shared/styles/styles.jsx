@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -64,7 +64,7 @@ export const MainText = styled.div`
 export const Acesso = styled.aside`
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, #ececec 0%, #ffffff 14.58%);
+  background: #ffffff;
 `;
 
 export const Fields = styled.div`
@@ -80,8 +80,8 @@ export const EmpresaLogo = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 306px;
-  height: 107px;
+  width: 300px;
+  height: 190px;
   background-color: transparent;
   margin-bottom: 35px;
 `;
@@ -90,14 +90,16 @@ export const Inputs = styled.div`
   width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 1em;
 
   label {
     font-style: normal;
+    width: 290px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
     color: #373737;
     text-align: left;
     margin-bottom: 3px;
@@ -105,31 +107,30 @@ export const Inputs = styled.div`
 
   input {
     box-sizing: border-box;
-    width: 400px;
-    height: 60px;
-    border: 2px solid #0385fd;
-    border-radius: 5px;
+    width: 290px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #ccc;
     font-size: 25px;
     padding-left: 1em;
   }
 
   input:hover {
     transition: 0.3s;
-    border: 3px solid #03fd80;
-    width: 420px;
-    height: 60px;
+    border-bottom: 2px solid #451fed;
+    height: 45px;
   }
 `;
 
 export const ButtonBlue = styled.div`
-  width: 401px;
+  width: 300px;
   height: 60px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 
   button {
     width: 100%;
     height: 100%;
-    background: #0385fd;
+    background: #045bad;
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
@@ -141,12 +142,12 @@ export const ButtonBlue = styled.div`
   }
 
   button:hover {
-    background: #0a4780;
+    background: #02192e;
   }
 `;
 
 export const BotaoGreen = styled.div`
-  width: 401px;
+  width: 300px;
   height: 60px;
   margin-bottom: 0.5em;
 
